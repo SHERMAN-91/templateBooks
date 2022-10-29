@@ -1,0 +1,624 @@
+/* body section */
+nav.BodyNav form {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+nav.BodyNav.container {
+    position: relative;
+}
+
+nav.BodyNav form label {
+    border: 1px solid green;
+    padding: 5px 10px;
+    display: flex;
+    border-radius: 25px 0 0 25px;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+}
+
+nav.BodyNav form input {
+    border: 1px solid green;
+    border-left: none;
+    border-radius: 0 25px 25px 0;
+    padding: 5px 10px;
+}
+
+.someBooksBox {
+    margin: -10px 0;
+    background: #8395a7;
+}
+
+.typeBookBox {
+    display: flex;
+    width: max-content;
+    flex-direction: row-reverse;
+}
+
+button#showTypsBut {
+    padding: 10px 10px 0;
+    border-radius: 10px;
+    background: #e67e22;
+    color: whitesmoke;
+    cursor: pointer;
+    font-weight: bolder;
+    border: 2px groove white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* transform: translateX(-200px); */
+    transition: 2s;
+    animation: NotmoveButD .5s ease-in-out;
+}
+
+button#showTypsBut>span {
+    font-weight: bold;
+    transition: .5s;
+}
+
+button#showTypsBut>span {
+    transform: rotateX(0deg);
+}
+
+.typeBookBox:hover button#showTypsBut>span {
+    transform: rotateX(-180deg);
+}
+
+.typeBookBox:hover button#showTypsBut {
+    background: #d35400;
+}
+
+.typeBookBox:hover .listOfsection {
+    opacity: 1;
+    transition: .3s;
+    padding: 10px;
+    max-height: 500px;
+    z-index: 10;
+}
+
+.listOfsection {
+    width: 100%;
+    transition: .3s;
+    display: flex;
+    opacity: 0;
+    background: gold;
+    position: absolute;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0px;
+    top: calc(100% - 10px);
+    justify-content: space-between;
+    border-radius: 0 0 15px 15px;
+}
+
+.typeBookBo>ul {
+    display: block;
+    width: 50%;
+    padding: 10px;
+}
+
+.typeBookBox>ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    display: block;
+    margin: 14px 0;
+    border-bottom: 1px solid;
+}
+
+.typeBookBox ul li a:hover {
+    /* background-color: aquamarine; */
+}
+
+.typeBookBox .coverThis {
+    width: 47%;
+    /* height: 100%; */
+    border-radius: 48px;
+    background-image: url("./img/childrenbook.png");
+    background-size: 100% 100%;
+}
+
+.bookMonth {
+    color: whitesmoke;
+    background-image: url("./img/backBook.jpg");
+    background-size: 100% 100%;
+    position: relative;
+    overflow: hidden;
+    /* background: linear-gradient(105deg, #6d9fe7, #002a48); */
+}
+
+.bookMonth h2 {
+    padding: 25px 10px;
+    width: max-content;
+    margin: 5px auto;
+    text-align: center;
+    background: aquamarine;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-family: cursive;
+    color: darkmagenta;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.bookMonth>p {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    line-height: 35px;
+    font-size: 20px;
+}
+
+.bookMonth img {
+    width: 300px;
+    display: block;
+    margin: auto;
+}
+
+.bookMonth figcaption {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid;
+    width: max-content;
+    margin: 10px auto;
+}
+
+
+.bookMonth form * {
+    border-radius: 10px;
+}
+
+input#inpComment {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.bookMonth input[type="submit"] {
+    padding: 10px;
+    color: whitesmoke;
+    background: linear-gradient(45deg, #e4f3ff, #1076ff);
+    font-size: 18px;
+}
+
+.bookMonthcover {
+    display: grid;
+    justify-content: normal;
+    grid-auto-columns: 1fr, 2fr;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+aside {
+    transition: 2s;
+    order: 2;
+    transform: scale(0);
+}
+
+.title {
+    padding: 12px 0;
+    border-bottom: 1px solid;
+    width: max-content;
+    margin: 0 0 10px;
+}
+
+.bookMonthcover figure {
+    width: max-content;
+    position: relative;
+    left: 0%;
+    opacity: 0;
+    transition: 2s;
+    transform: translate(-110%, 0px);
+}
+
+.layout {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.bookMonth * {
+    position: relative;
+}
+
+.boxsection {
+    padding: 10px;
+}
+
+.boxsection h2 {
+    padding: 10px 20px 5px 0;
+    border-bottom: 1px solid;
+    width: max-content;
+    margin: 0 0 15px;
+    left: 10px;
+    position: sticky;
+    top: 0;
+}
+
+.boxScroll {
+    overflow-X: scroll;
+}
+
+.boxScroll::-webkit-scrollbar {
+    background-color: whitesmoke;
+    /* outline: 1px solid; */
+    padding: 10px;
+}
+
+.boxScroll::-webkit-scrollbar-track {
+    /* background-color: #00d2d3; */
+}
+
+.boxScroll::-webkit-scrollbar-thumb {
+    background-color: #01a3a4;
+    border: 3px solid whitesmoke;
+    border-radius: 5px;
+    /* outline: 1px solid; */
+}
+
+.boxBooks {
+    display: flex;
+    justify-content: space-between;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    width: max-content;
+}
+
+.imgbookCover {
+    position: relative;
+    overflow: hidden;
+    border: 2px solid white;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 2s;
+    width: 200px;
+    display: block;
+    transform: scale(0);
+}
+
+.discbook {
+    position: absolute;
+    bottom: -70%;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    transition: .5s;
+    height: 100%;
+    z-index: 10;
+    color: white;
+    cursor: auto;
+}
+
+.discbook h4 {
+    text-align: center;
+    padding: 10px;
+}
+
+.imgbookCover:hover .discbook {
+    bottom: 0px;
+    font-size: 12px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+}
+
+.imgbookCover img {
+    width: 100%;
+    height: 100%;
+}
+
+.star span {
+    color: gold;
+    font-size: 21px !important;
+    padding: 10px 0;
+}
+
+.parentBoxSection {
+    position: relative;
+}
+
+.butsMove {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    top: 55%;
+    display: none;
+    left: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 0 10px;
+}
+
+.butsMove button {
+    padding: 0 3px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border-color: rgba(255, 255, 255, .6);
+    line-height: 10px;
+    border-radius: 5px;
+}
+
+button.dowBut {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    background: lightgreen;
+    color: purple;
+    border-radius: 10px;
+    border: 2px groove white;
+    padding: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    animation: notMove .5s .7s ease;
+    transform-origin: bottom;
+}
+
+.imgbookCover:hover button.dowBut {
+    animation-name: moveButD;
+}
+
+@keyframes moveButD {
+    0% {
+        transform: translateX(-200px) skewX(7deg);
+    }
+
+    25% {
+        transform: translateX(10px) skewX(-7deg);
+    }
+
+    50% {
+        transform: translateX(-10px) skewX(7deg);
+    }
+
+    75% {
+        transform: translateX(10px) skewX(-7deg);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.formD {
+    display: flex;
+    width: max-content;
+    padding: 5px 50px 0;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 80px;
+    transition: .3s;
+}
+
+.formD>span {
+    font-size: 33px;
+    position: absolute;
+    border: 1px solid;
+    color: lightgreen;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.bookMonth form {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: .3s;
+    gap: 10px;
+    position: absolute;
+    top: 21%;
+    right: 6.5%;
+    left: 94.5%;
+    bottom: 100%;
+    transform: translate(0%, 0%);
+    border: 1px solid lightblue;
+    transition: .3s;
+    background-image: linear-gradient(45deg, #0056c6 -2%, #8e0101 100%);
+}
+
+.showForm {
+    bottom: 0% !important;
+    left: 0% !important;
+    top: 15% !important;
+    right: 15% !important;
+    transform: translate(8%, -4%) !important;
+    border: 1px solid lightblue !important;
+}
+
+.bookMonth form *::placeholder {
+    color: lightgrey;
+}
+
+.bookMonth form * {
+    border-radius: 0;
+    padding: 10px;
+    width: 90%;
+    color: white;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid white;
+}
+
+#inpComment {
+    font-size: 17px;
+    max-height: 85px;
+    max-width: 300px;
+}
+
+@media only screen and (max-width:770px) {
+    .bookMonth h2 {
+        padding: 14px 10px;
+        font-size: 20px;
+    }
+
+    .bookMonth>p {
+        line-height: 35px;
+        font-size: 14px;
+    }
+
+    aside {
+        font-size: 14px;
+        line-height: 23px;
+    }
+
+    .title {
+        padding: 4px 0;
+    }
+
+    .bookMonth img {
+        width: 240px;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .bodySection .parentNav {
+        display: none;
+    }
+
+    .bookMonth h2 {
+        padding: 10px 10px;
+        margin: 5px auto;
+        font-size: 16px;
+    }
+
+    .bookMonth>p {
+        width: auto;
+        padding: 5px;
+        line-height: 20px;
+        font-size: 14px;
+    }
+
+    .bookMonthcover {
+        grid-template-columns: 1fr;
+    }
+
+    aside {
+        font-size: 14px;
+        line-height: 20px;
+        transform: scale(1);
+        text-align: center;
+    }
+
+    .bookMonthcover figure {
+        width: auto;
+        opacity: 1;
+        left: 100%;
+        transform: translate(-100%, 0px);
+    }
+
+    .bookMonthcover figure {
+        width: auto;
+        transform: translate(-100%, 0px);
+    }
+
+    .formD {
+        font-size: 14px;
+        width: auto;
+        margin: 20px auto;
+    }
+
+    .formD>span {
+        top: 5px;
+        right: 5px;
+    }
+
+    .bookMonth form {
+        top: 26%;
+        right: 8.5%;
+        left: 93.5%;
+    }
+
+    .showForm {
+        top: 18% !important;
+        right: 18% !important;
+    }
+
+    .bookMonth form *::placeholder {
+        color: white;
+    }
+
+    .bookMonth form input {
+        border: none;
+        color: white;
+        padding: 10px;
+        background: transparent;
+        border-bottom: .3px solid white;
+        border-radius: 0;
+    }
+
+    textarea#inpComment {
+        background: transparent;
+        margin-top: 15px;
+        max-width: 100%;
+        min-height: 50px;
+        max-height: 150px;
+    }
+
+    .boxsection h2 {
+        font-size: 18px;
+    }
+
+    .imgbookCover {
+        width: 100px;
+    }
+
+    .boxScroll::-webkit-scrollbar {
+        height: 10px;
+    }
+
+    .imgbookCover:hover .discbook {
+        bottom: 0px;
+        font-size: 12px;
+        overflow: scroll;
+        color: white;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 15px 1px;
+    }
+
+    .discbook h4 {
+        text-align: center;
+        padding: 0px;
+    }
+
+    .discbook p {
+        font-size: 10px;
+    }
+
+    .star span {
+        color: gold;
+        font-size: 11px !important;
+        padding: 0px 0;
+    }
+
+    .imgbookCover:hover button.dowBut {
+        animation-name: moveButD;
+        top: -3px;
+        bottom: auto;
+        transform: scale(.7);
+    }
+
+    button.dowBut {
+        position: absolute;
+        right: 5px;
+        top: 100%;
+        background: lightgreen;
+        color: purple;
+        border-radius: 10px;
+        border: 2px groove white;
+        padding: 1px;
+        font-size: 8px;
+        cursor: pointer;
+        animation: notMove .5s .7s ease;
+        transform-origin: bottom;
+    }
+}

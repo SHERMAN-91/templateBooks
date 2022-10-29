@@ -1,0 +1,53 @@
+article.page {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+    line-height: 27px;
+}
+
+.leftSidePag h3 {
+    padding: 20px 0 30px;
+}
+
+p.pGrey {
+    color: grey;
+    font-style: italic;
+    font-weight: bolder;
+    border-left: 5px solid;
+    padding: 0 20px 5px;
+}
+
+.rightSidePag h3 {
+    padding: 0px 0 15px;
+}
+
+.rightSidePag p {
+    padding: 0 0 10px;
+}
+
+.rightSidePag h3 {
+    padding: 0px 0 15px;
+}
+
+figure {
+    font-size: 14px;
+    color: grey;
+    line-height: 20px;
+}
+
+@media only screen and (max-width:770px) {
+
+    article.page {
+        flex-direction: column;
+    }
+
+    .rightSidePag img {
+        width: 80%;
+    }
+
+    article.page {
+        flex-direction: column;
+        padding: 0 10px;
+    }
+}

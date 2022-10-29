@@ -1,0 +1,226 @@
+.bodyOther {
+    padding: 100px 0;
+    background-color: #1c4444;
+    opacity: 1;
+    background-image: linear-gradient(30deg, #7f888a 12%, transparent 12.5%, transparent 87%, #7f888a 87.5%, #7f888a), linear-gradient(150deg, #7f888a 12%, transparent 12.5%, transparent 87%, #7f888a 87.5%, #7f888a), linear-gradient(30deg, #7f888a 12%, transparent 12.5%, transparent 87%, #7f888a 87.5%, #7f888a), linear-gradient(150deg, #7f888a 12%, transparent 12.5%, transparent 87%, #7f888a 87.5%, #7f888a), linear-gradient(60deg, #7f888a77 25%, transparent 25.5%, transparent 75%, #7f888a77 75%, #7f888a77), linear-gradient(60deg, #7f888a77 25%, transparent 25.5%, transparent 75%, #7f888a77 75%, #7f888a77);
+    background-size: 34px 60px;
+    background-position: 0 0, 0 0, 17px 30px, 17px 30px, 0 0, 17px 30px;
+    background-attachment: fixed;
+}
+
+.conectSections {
+    z-index: 1;
+}
+
+.boxPareCon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* text-align: center; */
+}
+
+
+.leftSideCon {
+    width: max-content !important;
+    color: white;
+    margin: auto;
+    padding: 50px;
+}
+
+.boxPareCon>* {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.adressStor {
+    padding: 20px;
+    border-bottom: 5px solid;
+}
+
+h1.titleList {
+    padding: 10px 0;
+}
+
+.adress h3,
+.emailCon h3,
+.phonCon h3 {
+    padding: 5px 0;
+}
+
+.adress p,
+.emailCon p,
+.phonCon p {
+    padding: 0px 0px 16px 11px;
+    font-size: 15px;
+    color: grey;
+}
+
+.rightSidCon form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.adressStor,
+.dayWorck {
+    padding: 47px;
+    text-align: center;
+    border-radius: 50%;
+    transform: scale(.9);
+    background: rgba(0, 0, 0, .8);
+    border: 2px solid white;
+}
+
+h1.titleList {
+    padding: 10px 0;
+}
+
+.leftSideCon h3 {
+    padding: 5px 0;
+}
+
+.leftSideCon p {
+    padding: 0px 0px 16px 11px;
+    font-size: 15px;
+    color: lightcyan;
+}
+
+.rightSidCon {
+    align-items: flex-start;
+    gap: 15px;
+    width: 40%;
+    margin: auto;
+    padding: 10px 50px 0;
+    color: white;
+    background: #3C4596;
+    border: 10px ridge white;
+    border-radius: 27px;
+    border-top-color: #333;
+    border-left-color: #333;
+}
+
+.rightSidCon p {
+    line-height: 24px;
+    padding-left: 10px;
+}
+
+.rightSidCon form input {
+    background: transparent;
+    padding: 10px;
+    border: none;
+    border-bottom: .5px solid #5C91D3;
+    margin: 10px 0;
+    transition: 1s;
+}
+
+.rightSidCon form input::placeholder {
+    color: white;
+}
+
+.rightSidCon form input:focus {
+    outline: .4px solid #5C91D3;
+}
+
+.rightSidCon form textarea {
+    padding: 20px 10px;
+    max-width: 100%;
+    overflow: scroll;
+    max-height: 200px;
+}
+
+.rightSidCon form input {
+    background: transparent;
+    padding: 10px;
+    border: 1px solid;
+    border-bottom: .5px solid #5C91D3;
+    margin: 10px 0;
+}
+
+input[type="submit"] {
+    padding: 20px !important;
+    margin: 18px 0 0 !important;
+    color: lightpink;
+    font-size: 20px;
+    position: relative;
+}
+
+@media only screen and (max-width:770px) {
+    .boxPareCon {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .boxPareCon>* {
+        width: 100%;
+        flex-direction: row;
+        display: flex;
+        justify-content: center;
+    }
+
+    .leftSideCon {
+        width: 100% !important;
+    }
+
+    .adressStor,
+    .dayWorck {
+        padding: 47px;
+        text-align: center;
+        border-radius: 0%;
+        transform: scale(1);
+        background: rgba(0, 0, 0, .8);
+        border: none;
+        width: 48%;
+    }
+
+    .adressStor {
+        border-right: 3px solid;
+    }
+
+    .rightSidCon {
+        align-items: stretch;
+        gap: 9px;
+        width: 100%;
+
+        padding: 10px 10px;
+    }
+
+    h1.titleList:not(.leftSideCon h1) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-right: 3px solid;
+    }
+
+    .rightSidCon p {
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .boxPareCon {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .boxPareCon>* {
+        width: 100%;
+        flex-direction: column;
+        font-size: 12px;
+        gap: 5px;
+        margin: 0 0 5px;
+        padding: 0 !important;
+
+    }
+
+    .adressStor,
+    .dayWorck {
+        padding: 0px !important;
+        border: none;
+        width: 100%;
+    }
+}
