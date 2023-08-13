@@ -1,0 +1,414 @@
+body {
+    background-repeat: no-repeat;
+    position: relative;
+    background: radial-gradient(#01468f, transparent);
+}
+
+
+
+.layOutAbut {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, .5);
+}
+
+.articlesBoxParent {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 60% 30%;
+    align-items: baseline;
+
+}
+
+.leftArt>div {
+    font-size: 15px;
+    margin: 10px 0;
+    line-height: 25px;
+    border-radius: 10px;
+}
+
+.leftArt h2,
+.rightArt>div>h2 {
+    padding: 10px 0;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    width: max-content;
+    padding: 17px;
+    margin: 10px auto 20px;
+    border-radius: 10px;
+}
+
+.imgbox {
+    position: relative;
+    width: max-content;
+    float: right;
+    border: 5px groove grey;
+    background: radial-gradient(darkcyan, cyan);
+}
+
+.textImg {
+    width: 100%;
+}
+
+.textImg img {
+    width: 300px;
+    float: right;
+    border-style: ridge;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.imgbox>button {
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    color: white;
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, .5);
+    justify-content: center;
+    border-radius: 50%;
+    border-style: dashed;
+    border: 1px white ridge;
+}
+
+button.shopImgeleft {
+    left: 5px;
+}
+
+button.shopImgeright {
+    right: 5px;
+}
+
+button.fulS {
+    bottom: 5px;
+    top: auto;
+    border: none;
+    right: 5px;
+    transition: .5s;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.imgbox:hover button.fulS {
+    opacity: 1;
+}
+
+.leftBotArt {
+    display: grid;
+    grid-template-columns: 48% 50%;
+    gap: 2%;
+}
+
+.leftArt>div>div,
+.rightArt>div {
+    padding: 10px;
+    background: radial-gradient(#8ab1f7, white);
+}
+
+.bottomLeftArt img {
+    width: 100px;
+    display: block;
+    margin: auto;
+}
+
+.inpCheck {
+    position: absolute;
+    z-index: -3;
+    cursor: pointer;
+}
+
+.inpCheck:checked~ul.listAchive {
+    max-height: 200px;
+    opacity: 1;
+}
+
+.inpCheck:checked~.iconBox span {
+    transform: rotateX(180deg);
+}
+
+
+ul.listAchive {
+    border: 1px solid;
+    transition: 1s;
+    max-height: 0;
+    overflow-y: hidden;
+    opacity: 0;
+    padding: 0 10px;
+}
+
+ul.listAchive li {
+    padding: 10px;
+    border-bottom: 1px solid;
+}
+
+ul.listAchive li:last-child {
+    border-bottom: none;
+}
+
+ul.listYear label {
+    border: 3px ridge green;
+    padding: 5px 10px;
+    margin: 0px;
+    border-radius: 10px 10px 0 0;
+    display: block;
+    cursor: pointer;
+    z-index: 10;
+    position: relative;
+}
+
+.iconBox {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    z-index: 0;
+}
+
+.iconBox span {
+    cursor: pointer;
+    font-size: 34px;
+}
+
+ul.listYear>li {
+    position: relative;
+    margin: 10px;
+}
+
+ul.listAchive li:hover {
+    background-color: lightgrey;
+}
+
+.topRight li {
+    padding: 0 0 10px 0;
+    margin: 12px 0;
+    border-bottom: 1px solid;
+}
+
+.topRight li h3 {
+    border-bottom: 1px solid;
+    width: max-content;
+    padding: 0 21px 5px 0;
+}
+
+.rightArt>div a {
+    text-decoration: none;
+    padding: 5px 0;
+    display: block;
+}
+
+.topRight li p {
+    overflow: hidden;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.topRight li p img {
+    display: block;
+    border-radius: 10px;
+    border: 2px solid whitesmoke;
+}
+
+.rightArt>div {
+    margin: 10px 0;
+}
+
+.botRight>p {
+    margin: 10px 0;
+    line-height: 22px;
+}
+
+.imgBoxParent {
+    display: flex;
+    gap: 10px;
+    width: 10;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+
+.OurTeam h2 {
+    padding: 20px;
+    border-bottom: 1px solid;
+    width: max-content;
+}
+
+.OurTeam p {
+    color: white;
+    padding: 10px 10px 20px;
+    text-shadow: 1px 1px 10px black;
+}
+
+.boxImgPerson {
+    transition: 2.5s;
+    /* transition-delay: 1s; */
+    transform: scale(0);
+    border: 2px solid white;
+}
+
+.boxImgPerson img {
+    width: 270px;
+    border: 8px solid whitesmoke;
+}
+
+.boxInf {
+    color: white;
+    padding: 10px 0;
+    background: darkcyan;
+}
+
+.boxInf>div {
+    padding: 5px 0;
+}
+
+.name {
+    padding: 5px;
+}
+
+.socitial {
+    padding: 10px;
+}
+
+.socitial>a {
+    text-decoration: none;
+    color: white;
+    padding: 0 5px;
+}
+
+.socitial>a>i {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.socitial>a>i:hover {
+    color: purple;
+}
+
+.whatWeHave.container {
+    transition: 1.2s;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 15px ridge whitesmoke;
+    padding: 20px 0;
+    text-align: center;
+    margin: 30px auto;
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    transform: scale(0);
+}
+
+.whatWeHave.container h2 {
+    padding: 15px 0;
+}
+
+.whatWeHave.container i {
+    font-size: 40px;
+    color: cyan;
+    padding: 20px 0;
+}
+
+.whatWeHave.container p {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.whatWeHave.container p span {
+    font-size: 30px;
+    color: cyan;
+}
+
+.fullScren {
+    position: absolute;
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width:770px) {
+    .articlesBoxParent {
+        grid-template-columns: 1fr;
+    }
+
+    .leftArt h2,
+    .rightArt>div>h2 {
+        font-size: 19px;
+        padding: 8px;
+    }
+
+    .leftBotArt {
+        grid-template-columns: 1fr;
+    }
+
+    .bottomRightArt {
+        height: 300px;
+        padding-bottom: 20px;
+        overflow: scroll;
+    }
+
+    ul.listYear>li {
+        width: 28%;
+        display: inline-block;
+    }
+
+    .boxImgPerson img {
+        width: 100%;
+    }
+
+    ul.listAchive {
+        width: 100%;
+        position: absolute;
+        top: 41px;
+        overflow-y: scroll;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    ul.listYear>li {
+        width: auto;
+        display: block;
+    }
+
+    ul.listAchive {
+        position: unset;
+    }
+
+    .whatWeHave.container {
+        flex-direction: column;
+    }
+
+    .whatWeHave.container>div:not(:last-child) {
+        margin-bottom: 13px;
+        border-bottom: 1px solid;
+    }
+
+    .boxInf>div {
+        padding: 0;
+    }
+
+    .socitial {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .socitial>a {
+        padding: 0 4px;
+    }
+
+    .socitial>a>i {
+        font-size: 14px;
+    }
+
+    .fullScren {
+        width: 100%;
+    }
+}
